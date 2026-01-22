@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Prediction System</h1>
+
+        <form method="POST">
+            <input type="number" step="0.01" name="radius" placeholder="Mean Radius" required>
+            <input type="number" step="0.01" name="texture" placeholder="Mean Texture" required>
+            <input type="number" step="0.01" name="perimeter" placeholder="Mean Perimeter" required>
+            <input type="number" step="0.01" name="area" placeholder="Mean Area" required>
+            <input type="number" step="0.01" name="smoothness" placeholder="Mean Smoothness" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result {{ prediction|lower }}">
+                <h2>Diagnosis: {{ prediction }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
