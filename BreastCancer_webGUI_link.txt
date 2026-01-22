@@ -1,0 +1,6 @@
+Name: Anjolaoluwa Adekomi
+Matric Number: 22CH031976
+Machine Learning Algorithm Used: Logistic Regression
+Model persistence method used: Pickle
+Live URL of the hosted application: https://breast-cancer-prediction-n8mx.onrender.com/
+GitHub repository link: https://github.com/aanjolaoluwa/breast-cancer-prediction
